@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">
+                Rohan Mishra Website
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/aboutMe">About</a></li>
+                    <li><a href="#secondSection">Work Experience</a></li>
+                    <li><a href="https://github.com/rohanmishra004">Projects</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi I am <span class="purple">Rohan Mishra</span>
+                <div id="typed-text">
+                    I am <span id="role">Senior Software Engineer</span> currently working with <span
+                        id="company">Accenture </span> as an AWS Backend Engineer
+                </div>
+                <div id="speciality"></div>
+            </div>
+            <div class="rightSection">
+                <img src="img1.jpg" alt="Image">
+            </div>
+        </section>
+        <hr>
+        <section id="secondSection">
+            <h1>Work Experience</h1>
+            <div class="left-workArea">
+                <div class="companies">
+                    <div class="experience">
+                        <div class="company">
+                            <h4>TCS</h4>
+                            <p>Associate Software Engineer</p>
+                            <p>July 2019 - July 2022</p>
+                        </div>
+                        <div class="responsibilities">
+                            <ul>
+                                <li>Automated Test Scripts using Python and Selenium to reduce regression test time by
+                                    60%.</li>
+                                <li>Led the implementation of 3 new logistics modules, resulting in a 20% increase in
+                                    overall project
+                                    efficiency.</li>
+                                <li>Collaborated with QA teams to ensure testing aligns with business requirements.</li>
+                                <li>Assisted in the onboarding process of 2 new team members, facilitating their
+                                    integration into the
+                                    project.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <p>Tech Stack used: Java/J2EE, Python, Node.js, and CRM - Salesforce Cloud Services</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="experience">
+                        <div class="company">
+                            <h4>Accenture</h4>
+                            <p>Software Engineer Ⅱ</p>
+                            <p>July 2022 - Present</p>
+                        </div>
+                        <div class="responsibilities">
+                            <ul>
+                                <li>Design and develop complex, high-quality, enterprise-transforming business
+                                    applications using Java/J2EE and Spring boot.</li>
+                                <li>Create APIs for JSON Modification and automate the complete instance, handling over
+                                    500 conversions per second.</li>
+                                <li>Create TypeScript/Express APIs for Customer Portal, reducing dependency on constant
+                                    monitoring and increasing efficiency by 50 percent.</li>
+                                <li>Created xApi for middleware integration between React FrontEnd and AWS Lambda,
+                                    resulting in a 20 percent efficiency improvement.</li>
+                                <li>Developed Build Authentication for Insurance Login System with 4 Layer
+                                    Authentication.</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <p>Tech Stack used: Java/J2EE, Python, Node.js, and CRM - Salesforce Cloud Services</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer></footer>
+
+
+
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        let options = {
+            strings: [' I am <span id="role">Senior Software Engineer</span> currently working with <span id="company">Accenture </span>as an AWS Backend Engineer'],
+            typeSpeed: 50,
+        }
+        let typed = new Typed('#typed-text', options)
+    </script>
+
+    <script src="footer.js"></script>
+</body>
+
+</html>
